@@ -8,6 +8,8 @@ require_once 'vendor/openaustralia/scraperwiki/scraperwiki.php';
 use PGuardiario\PGBrowser;
 use Torann\DomParser\HtmlDom;
 
+echo "Running PHP " . phpversion() . " on " . trim(shell_exec('uname -a')) . "\n";
+
 // Read in a page
 $browser = new PGBrowser();
 $page = $browser->get("https://example.com");
